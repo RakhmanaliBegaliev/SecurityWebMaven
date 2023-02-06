@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> For all employees</h1>
+<a sec:authorize="hasRole('HR')" href="/hr">HR</a>
+<br><br>
+<a sec:authorize="hasRole('MANAGER')" href="/managerInfo">MANAGER</a>
+</body>
+</html>
